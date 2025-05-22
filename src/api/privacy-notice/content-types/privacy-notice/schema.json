@@ -1,0 +1,213 @@
+{
+  "kind": "singleType",
+  "collectionName": "privacy_notices",
+  "info": {
+    "singularName": "privacy-notice",
+    "pluralName": "privacy-notices",
+    "displayName": "PrivacyNotice",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Description1": {
+      "type": "string"
+    },
+    "Description2": {
+      "type": "text"
+    },
+    "Title1": {
+      "type": "string"
+    },
+    "Description3": {
+      "type": "string"
+    },
+    "Description4": {
+      "type": "string"
+    },
+    "Title2": {
+      "type": "string"
+    },
+    "Title3": {
+      "type": "string"
+    },
+    "Description5": {
+      "type": "string"
+    },
+    "Description6": {
+      "type": "string"
+    },
+    "Description7": {
+      "type": "string"
+    },
+    "Description8": {
+      "type": "string"
+    },
+    "Title4": {
+      "type": "string"
+    },
+    "Description9": {
+      "type": "string"
+    },
+    "Description10": {
+      "type": "string"
+    },
+    "Description11": {
+      "type": "string"
+    },
+    "Description12": {
+      "type": "string"
+    },
+    "Title5": {
+      "type": "string"
+    },
+    "Description13": {
+      "type": "string"
+    },
+    "Title6": {
+      "type": "string"
+    },
+    "Description14": {
+      "type": "string"
+    },
+    "Title7": {
+      "type": "string"
+    },
+    "Description15": {
+      "type": "string"
+    },
+    "Title8": {
+      "type": "string"
+    },
+    "Title9": {
+      "type": "string"
+    },
+    "Description16": {
+      "type": "string"
+    },
+    "Description17": {
+      "type": "string"
+    },
+    "Description18": {
+      "type": "string"
+    },
+    "Description19": {
+      "type": "string"
+    },
+    "Description20": {
+      "type": "string"
+    },
+    "Title10": {
+      "type": "string"
+    },
+    "Title11": {
+      "type": "string"
+    },
+    "Description21": {
+      "type": "string"
+    },
+    "Description22": {
+      "type": "string"
+    },
+    "Description23": {
+      "type": "string"
+    },
+    "Description24": {
+      "type": "string"
+    },
+    "Description25": {
+      "type": "string"
+    },
+    "Description26": {
+      "type": "string"
+    },
+    "Description27": {
+      "type": "string"
+    },
+    "Description28": {
+      "type": "string"
+    },
+    "Description29": {
+      "type": "string"
+    },
+    "Description30": {
+      "type": "string"
+    },
+    "Description31": {
+      "type": "string"
+    },
+    "Description32": {
+      "type": "string"
+    },
+    "Description33": {
+      "type": "string"
+    },
+    "Description34": {
+      "type": "string"
+    },
+    "Description35": {
+      "type": "string"
+    },
+    "Description36": {
+      "type": "string"
+    },
+    "Description37": {
+      "type": "string"
+    },
+    "Description38": {
+      "type": "string"
+    },
+    "Description39": {
+      "type": "string"
+    },
+    "Description40": {
+      "type": "string"
+    },
+    "Description41": {
+      "type": "string"
+    },
+    "Description42": {
+      "type": "string"
+    },
+    "Title12": {
+      "type": "string"
+    },
+    "Description43": {
+      "type": "string"
+    },
+    "Title13": {
+      "type": "string"
+    },
+    "Description44": {
+      "type": "text"
+    },
+    "Title14": {
+      "type": "string"
+    },
+    "Description45": {
+      "type": "string"
+    },
+    "Title15": {
+      "type": "string"
+    },
+    "Description46": {
+      "type": "text"
+    },
+    "Title16": {
+      "type": "string"
+    },
+    "Description47": {
+      "type": "string"
+    },
+    "Description48": {
+      "type": "string"
+    }
+  }
+}

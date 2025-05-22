@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "help_supports",
+  "info": {
+    "singularName": "help-support",
+    "pluralName": "help-supports",
+    "displayName": "HelpSupport",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "banner": {
+      "type": "string"
+    },
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

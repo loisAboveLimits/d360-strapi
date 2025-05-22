@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "international_transfers",
+  "info": {
+    "singularName": "international-transfer",
+    "pluralName": "international-transfers",
+    "displayName": "InternationalTransfer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "SiteName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "customer_cares",
+  "info": {
+    "singularName": "customer-care",
+    "pluralName": "customer-cares",
+    "displayName": "CustomerCare"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "SiteName": {
+      "type": "string"
+    }
+  }
+}

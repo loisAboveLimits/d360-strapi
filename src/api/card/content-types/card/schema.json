@@ -1,0 +1,108 @@
+{
+  "kind": "singleType",
+  "collectionName": "cards",
+  "info": {
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "MainTitle": {
+      "type": "string"
+    },
+    "imges": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title1": {
+      "type": "string"
+    },
+    "Description1": {
+      "type": "string"
+    },
+    "Description2": {
+      "type": "string"
+    },
+    "Description3": {
+      "type": "string"
+    },
+    "Description4": {
+      "type": "string"
+    },
+    "Title2": {
+      "type": "string"
+    },
+    "Title3": {
+      "type": "string"
+    },
+    "Description5": {
+      "type": "string"
+    },
+    "imges1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imges2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "FAQTitle": {
+      "type": "string"
+    },
+    "FAQTitle1": {
+      "type": "string"
+    },
+    "FAQDescription1": {
+      "type": "string"
+    },
+    "FAQTitle2": {
+      "type": "string"
+    },
+    "FAQDescription2": {
+      "type": "string"
+    },
+    "FAQTitle3": {
+      "type": "string"
+    },
+    "FAQDescription3": {
+      "type": "string"
+    },
+    "FAQTitle4": {
+      "type": "string"
+    },
+    "FAQDescription4": {
+      "type": "string"
+    },
+    "MainTitle1": {
+      "type": "string"
+    },
+    "MainTitle2": {
+      "type": "string"
+    }
+  }
+}

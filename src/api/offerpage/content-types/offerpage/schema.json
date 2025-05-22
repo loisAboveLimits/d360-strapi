@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "offerpages",
+  "info": {
+    "singularName": "offerpage",
+    "pluralName": "offerpages",
+    "displayName": "Offerpage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "MainTitle": {
+      "type": "string"
+    },
+    "imges": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title1": {
+      "type": "string"
+    },
+    "MainTitle1": {
+      "type": "string"
+    },
+    "Description1": {
+      "type": "string"
+    },
+    "Description2": {
+      "type": "string"
+    }
+  }
+}

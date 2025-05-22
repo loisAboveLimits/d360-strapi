@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "security_awarenesses",
+  "info": {
+    "singularName": "security-awareness",
+    "pluralName": "security-awarenesses",
+    "displayName": "SecurityAwareness",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title1": {
+      "type": "string"
+    },
+    "Title2": {
+      "type": "richtext"
+    }
+  }
+}

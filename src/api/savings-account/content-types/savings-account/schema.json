@@ -1,0 +1,106 @@
+{
+  "kind": "singleType",
+  "collectionName": "savings_accounts",
+  "info": {
+    "singularName": "savings-account",
+    "pluralName": "savings-accounts",
+    "displayName": "SavingsAccount",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "MainTitle1": {
+      "type": "string"
+    },
+    "MainTitle2": {
+      "type": "string"
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title1": {
+      "type": "string"
+    },
+    "Title2": {
+      "type": "string"
+    },
+    "Title3": {
+      "type": "string"
+    },
+    "Title4": {
+      "type": "string"
+    },
+    "Title5": {
+      "type": "string"
+    },
+    "Title6": {
+      "type": "string"
+    },
+    "Title7": {
+      "type": "string"
+    },
+    "imges": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title8": {
+      "type": "string"
+    },
+    "FAQTitle1": {
+      "type": "string"
+    },
+    "FAQDescription1": {
+      "type": "string"
+    },
+    "FAQTitle2": {
+      "type": "string"
+    },
+    "FAQDescription2": {
+      "type": "string"
+    },
+    "FAQTitle3": {
+      "type": "string"
+    },
+    "FAQDescription3": {
+      "type": "string"
+    },
+    "FAQTitle4": {
+      "type": "string"
+    },
+    "FAQDescription4": {
+      "type": "string"
+    },
+    "Title9": {
+      "type": "string"
+    },
+    "Title10": {
+      "type": "string"
+    },
+    "Title11": {
+      "type": "string"
+    },
+    "Title12": {
+      "type": "string"
+    },
+    "Title13": {
+      "type": "string"
+    }
+  }
+}

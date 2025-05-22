@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "products_services_fees",
+  "info": {
+    "singularName": "products-services-fee",
+    "pluralName": "products-services-fees",
+    "displayName": "ProductsServicesFee",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "MainTitle": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "customer_protection_principles",
+  "info": {
+    "singularName": "customer-protection-principle",
+    "pluralName": "customer-protection-principles",
+    "displayName": "CustomerProtectionPrinciple"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "SiteName": {
+      "type": "string"
+    }
+  }
+}

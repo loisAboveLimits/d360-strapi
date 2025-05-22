@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "shariah_committees",
+  "info": {
+    "singularName": "shariah-committee",
+    "pluralName": "shariah-committees",
+    "displayName": "ShariahCommittee",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "imges": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title2": {
+      "type": "string"
+    },
+    "Title5": {
+      "type": "string"
+    },
+    "Description5": {
+      "type": "string"
+    },
+    "Title6": {
+      "type": "string"
+    },
+    "imges1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title1": {
+      "type": "string"
+    },
+    "Title7": {
+      "type": "richtext"
+    },
+    "Title8": {
+      "type": "richtext"
+    },
+    "Title9": {
+      "type": "richtext"
+    }
+  }
+}

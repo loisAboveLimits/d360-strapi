@@ -1,0 +1,108 @@
+{
+  "kind": "singleType",
+  "collectionName": "investor_relations",
+  "info": {
+    "singularName": "investor-relation",
+    "pluralName": "investor-relations",
+    "displayName": "InvestorRelation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "imges": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title1": {
+      "type": "richtext"
+    },
+    "Title2": {
+      "type": "richtext"
+    },
+    "imges1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title3": {
+      "type": "richtext"
+    },
+    "imges2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title4": {
+      "type": "richtext"
+    },
+    "imges3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Title5": {
+      "type": "richtext"
+    },
+    "imges4": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Title6": {
+      "type": "string"
+    },
+    "Title7": {
+      "type": "richtext"
+    },
+    "Title8": {
+      "type": "richtext"
+    },
+    "Title9": {
+      "type": "string"
+    },
+    "Title10": {
+      "type": "richtext"
+    },
+    "imges5": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

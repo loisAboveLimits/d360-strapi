@@ -1,0 +1,106 @@
+{
+  "kind": "singleType",
+  "collectionName": "payments",
+  "info": {
+    "singularName": "payment",
+    "pluralName": "payments",
+    "displayName": "Payment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "MainTitle": {
+      "type": "string"
+    },
+    "imges": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title1": {
+      "type": "string"
+    },
+    "Title2": {
+      "type": "string"
+    },
+    "Title3": {
+      "type": "string"
+    },
+    "Description3": {
+      "type": "string"
+    },
+    "Title4": {
+      "type": "string"
+    },
+    "Description4": {
+      "type": "string"
+    },
+    "Title5": {
+      "type": "string"
+    },
+    "Description5": {
+      "type": "string"
+    },
+    "Image1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title6": {
+      "type": "string"
+    },
+    "MainTitle1": {
+      "type": "string"
+    },
+    "FAQTitle1": {
+      "type": "string"
+    },
+    "FAQDescription1": {
+      "type": "string"
+    },
+    "FAQTitle2": {
+      "type": "string"
+    },
+    "FAQDescription2": {
+      "type": "string"
+    },
+    "FAQTitle3": {
+      "type": "string"
+    },
+    "FAQDescription3": {
+      "type": "string"
+    },
+    "FAQTitle4": {
+      "type": "string"
+    },
+    "FAQDescription4": {
+      "type": "string"
+    },
+    "Title7": {
+      "type": "string"
+    },
+    "Description6": {
+      "type": "string"
+    },
+    "Description7": {
+      "type": "string"
+    },
+    "Public": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "kind": "singleType",
+  "collectionName": "page1s",
+  "info": {
+    "singularName": "page1",
+    "pluralName": "page1s",
+    "displayName": "page1",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title1": {
+      "type": "string"
+    },
+    "Title2": {
+      "type": "string"
+    },
+    "Title3": {
+      "type": "string"
+    },
+    "Title4": {
+      "type": "string"
+    },
+    "Title5": {
+      "type": "string"
+    },
+    "Title6": {
+      "type": "string"
+    },
+    "Title7": {
+      "type": "string"
+    },
+    "Title8": {
+      "type": "string"
+    },
+    "Title9": {
+      "type": "string"
+    },
+    "Title10": {
+      "type": "string"
+    },
+    "Title11": {
+      "type": "string"
+    },
+    "Title12": {
+      "type": "string"
+    },
+    "Title13": {
+      "type": "string"
+    },
+    "Title14": {
+      "type": "string"
+    },
+    "Title15": {
+      "type": "string"
+    },
+    "Title16": {
+      "type": "string"
+    },
+    "Title17": {
+      "type": "string"
+    },
+    "Title18": {
+      "type": "string"
+    },
+    "Title19": {
+      "type": "string"
+    },
+    "Title20": {
+      "type": "string"
+    },
+    "Title21": {
+      "type": "string"
+    },
+    "Title22": {
+      "type": "string"
+    },
+    "Title23": {
+      "type": "string"
+    },
+    "Title24": {
+      "type": "string"
+    },
+    "Title25": {
+      "type": "string"
+    },
+    "Title26": {
+      "type": "string"
+    },
+    "Title27": {
+      "type": "string"
+    },
+    "Title28": {
+      "type": "string"
+    },
+    "Title29": {
+      "type": "string"
+    },
+    "Title30": {
+      "type": "string"
+    }
+  }
+}
