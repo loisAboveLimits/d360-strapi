@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "offerpages",
   "info": {
     "singularName": "offerpage",
@@ -14,9 +14,9 @@
     "MainTitle": {
       "type": "string"
     },
-    "imges": {
+    "imgage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -34,7 +34,49 @@
     "Description1": {
       "type": "string"
     },
-    "Description2": {
+    "offerDuration": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "benefit": {
+      "type": "string"
+    },
+    "benefitDescription": {
+      "type": "string"
+    },
+    "Terms": {
+      "type": "string"
+    },
+    "Terms1": {
+      "type": "string"
+    },
+    "Terms2": {
+      "type": "string"
+    },
+    "Terms3": {
+      "type": "string"
+    },
+    "Terms4": {
+      "type": "string"
+    },
+    "Terms5": {
+      "type": "string"
+    },
+    "Terms6": {
+      "type": "string"
+    },
+    "Terms7": {
+      "type": "string"
+    },
+    "offer_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::offer-card.offer-card",
+      "inversedBy": "offerpage"
+    },
+    "slug": {
       "type": "string"
     }
   }

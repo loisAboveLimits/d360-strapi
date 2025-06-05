@@ -1,11 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "about_d360s",
+  "collectionName": "home_pages",
   "info": {
-    "singularName": "about-d360",
-    "pluralName": "about-d360s",
-    "displayName": "Aboutd360",
-    "description": ""
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Home page content"
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +24,14 @@
         }
       }
     },
+    "Description1": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "Title2": {
       "type": "string",
       "pluginOptions": {
@@ -33,7 +41,7 @@
       }
     },
     "Description2": {
-      "type": "text",
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -72,71 +80,7 @@
         }
       }
     },
-    "FAQTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "FAQTitle1": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "FAQDescription1": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "FAQTitle2": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "FAQDescription2": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "FAQTitle3": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "FAQDescription3": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "FAQTitle4": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "FAQDescription4": {
+    "Description5": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -152,23 +96,7 @@
         }
       }
     },
-    "HelpingTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "HelpingDescription": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "HelpingDescription1": {
+    "Description6": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -184,7 +112,7 @@
         }
       }
     },
-    "Description5": {
+    "Description7": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -192,12 +120,7 @@
         }
       }
     },
-    "directors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::leader.leader"
-    },
-    "value1": {
+    "Title8": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -205,7 +128,7 @@
         }
       }
     },
-    "value2": {
+    "Description8": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -213,7 +136,7 @@
         }
       }
     },
-    "value3": {
+    "PhysicalCard": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -221,7 +144,7 @@
         }
       }
     },
-    "value1Des": {
+    "PhysicalCardDescription": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -229,7 +152,7 @@
         }
       }
     },
-    "value2Des": {
+    "DigitalCard": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -237,7 +160,7 @@
         }
       }
     },
-    "value3Des": {
+    "DigitalCardDescription": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -245,7 +168,7 @@
         }
       }
     },
-    "inside": {
+    "Shariah": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -253,7 +176,7 @@
         }
       }
     },
-    "outside": {
+    "ShariahDescription": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -261,7 +184,7 @@
         }
       }
     },
-    "email": {
+    "Hero": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -269,7 +192,7 @@
         }
       }
     },
-    "insideDes": {
+    "HeroDescription": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -277,7 +200,28 @@
         }
       }
     },
-    "outsideDes": {
+    "TransferHeading": {
+      "type": "string"
+    },
+    "TransferSubHeading": {
+      "type": "string"
+    },
+    "TransferDescription": {
+      "type": "string"
+    },
+    "Sender": {
+      "type": "string"
+    },
+    "Recipient": {
+      "type": "string"
+    },
+    "Fee": {
+      "type": "string"
+    },
+    "Conversion": {
+      "type": "string"
+    },
+    "Heading": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -285,7 +229,7 @@
         }
       }
     },
-    "emailDes": {
+    "Description": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -293,7 +237,31 @@
         }
       }
     },
-    "viaDes": {
+    "HeadingB": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "PhysicalCardCTA": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "DigitalCardCTA": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "SarihaBTN": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -309,7 +277,7 @@
         }
       }
     },
-    "contact": {
+    "Title1B": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -317,7 +285,7 @@
         }
       }
     },
-    "viaApp1": {
+    "Title2B": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -325,7 +293,7 @@
         }
       }
     },
-    "viaApp2": {
+    "Title3B": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -333,7 +301,7 @@
         }
       }
     },
-    "complaint": {
+    "Title8B": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -341,8 +309,15 @@
         }
       }
     },
-    "complaintDes": {
-      "type": "string",
+    "heroVideo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true

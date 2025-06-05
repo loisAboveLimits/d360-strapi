@@ -4,13 +4,31 @@
   "info": {
     "singularName": "offer",
     "pluralName": "offers",
-    "displayName": "Offer"
+    "displayName": "Offer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "banner": {
+    "Heading": {
+      "type": "string"
+    },
+    "Heading2": {
+      "type": "string"
+    },
+    "offer_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::offer-card.offer-card"
+    },
+    "Type1": {
+      "type": "string"
+    },
+    "Type2": {
+      "type": "string"
+    },
+    "Type3": {
       "type": "string"
     }
   }

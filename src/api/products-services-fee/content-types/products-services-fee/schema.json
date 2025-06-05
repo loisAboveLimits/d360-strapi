@@ -16,6 +16,126 @@
     },
     "Description": {
       "type": "string"
+    },
+    "FAQTitle1": {
+      "type": "string"
+    },
+    "FAQ1DescriptionA": {
+      "type": "string"
+    },
+    "FAQ1DescriptionAValue": {
+      "type": "string"
+    },
+    "FAQ1SubDescriptionA": {
+      "type": "string"
+    },
+    "FAQ1SubDescriptionAValue": {
+      "type": "string"
+    },
+    "FAQ1SubDescriptionB": {
+      "type": "string"
+    },
+    "FAQ1SubDescriptionBValue": {
+      "type": "string"
+    },
+    "FAQTitle2": {
+      "type": "string"
+    },
+    "FAQ2DescriptionA": {
+      "type": "string"
+    },
+    "FAQ2DescriptionAValue": {
+      "type": "string"
+    },
+    "FAQ2SubDescriptionA": {
+      "type": "string"
+    },
+    "FAQ2SubDescriptionAValue": {
+      "type": "string"
+    },
+    "FAQ2SubDescriptionB": {
+      "type": "string"
+    },
+    "FAQ2SubDescriptionBValue": {
+      "type": "string"
+    },
+    "FAQTitle3": {
+      "type": "string"
+    },
+    "FAQ3DescriptionA": {
+      "type": "string"
+    },
+    "FAQ3DescriptionAValue": {
+      "type": "string"
+    },
+    "FAQ3SubDescriptionA": {
+      "type": "string"
+    },
+    "FAQ3SubDescriptionAValue": {
+      "type": "string"
+    },
+    "FAQ3SubDescriptionB": {
+      "type": "string"
+    },
+    "FAQ3SubDescriptionBValue": {
+      "type": "string"
+    },
+    "FAQTitle4": {
+      "type": "string"
+    },
+    "FAQ4DescriptionA": {
+      "type": "string"
+    },
+    "FAQ4DescriptionAValue": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionA": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionAValue": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionB": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionBValue": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionC": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionCValue": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionD": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionDValue": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionE": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionEValue": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionF": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionFValue": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionG": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionGValue": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionH": {
+      "type": "string"
+    },
+    "FAQ4SubDescriptionHValue": {
+      "type": "string"
     }
   }
 }

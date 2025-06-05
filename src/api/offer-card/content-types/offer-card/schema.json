@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offer_cards",
+  "info": {
+    "singularName": "offer-card",
+    "pluralName": "offer-cards",
+    "displayName": "offerCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "type": {
+      "type": "string"
+    },
+    "offerpage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::offerpage.offerpage",
+      "mappedBy": "offer_card"
+    }
+  }
+}

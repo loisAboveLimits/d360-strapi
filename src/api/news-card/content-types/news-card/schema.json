@@ -1,35 +1,35 @@
 {
-  "kind": "singleType",
-  "collectionName": "contact_uses",
+  "kind": "collectionType",
+  "collectionName": "news_cards",
   "info": {
-    "singularName": "contact-us",
-    "pluralName": "contact-uses",
-    "displayName": "ContactUs",
+    "singularName": "news-card",
+    "pluralName": "news-cards",
+    "displayName": "newsCard",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "BannerText1": {
+    "heading": {
       "type": "string"
     },
-    "BannerText2": {
+    "shortDesc": {
       "type": "string"
     },
-    "BannerText3": {
+    "para1": {
       "type": "string"
     },
-    "Title1": {
+    "para2": {
       "type": "string"
     },
-    "Title2": {
+    "para3": {
       "type": "string"
     },
-    "TollFree": {
+    "date": {
       "type": "string"
     },
-    "outside": {
+    "slug": {
       "type": "string"
     }
   }

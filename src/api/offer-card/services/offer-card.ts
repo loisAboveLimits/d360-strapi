@@ -4,4 +4,4 @@
 
 import { factories } from '@strapi/strapi';
 
-export default factories.createCoreService('api::offerpage.offerpage');
+export default factories.createCoreService('api::offer-card.offer-card');

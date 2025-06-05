@@ -1,5 +1,5 @@
 /**
- * offerpage controller
+ * offer-card controller
  */
 
 import { factories } from '@strapi/strapi'

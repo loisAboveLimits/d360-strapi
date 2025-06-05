@@ -1,5 +1,5 @@
 /**
- * offer service
+ * offer-card service
  */
 
 import { factories } from '@strapi/strapi';

@@ -11,202 +11,154 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
+    "Heading": {
       "type": "string"
     },
-    "Description": {
+    "headingPara1": {
       "type": "string"
     },
-    "Description1": {
+    "headingPara2": {
       "type": "string"
     },
-    "Description2": {
-      "type": "text"
-    },
-    "Title1": {
+    "Personal": {
       "type": "string"
     },
-    "Description3": {
+    "PersonalPara": {
       "type": "string"
     },
-    "Description4": {
+    "Purpose": {
       "type": "string"
     },
-    "Title2": {
+    "PurposeA": {
       "type": "string"
     },
-    "Title3": {
+    "PurposeB": {
       "type": "string"
     },
-    "Description5": {
+    "PurposeC": {
       "type": "string"
     },
-    "Description6": {
+    "PurposeD": {
       "type": "string"
     },
-    "Description7": {
+    "PurposeE": {
       "type": "string"
     },
-    "Description8": {
+    "PurposeF": {
       "type": "string"
     },
-    "Title4": {
+    "PurposeG": {
       "type": "string"
     },
-    "Description9": {
+    "PurposeH": {
       "type": "string"
     },
-    "Description10": {
+    "PurposeI": {
       "type": "string"
     },
-    "Description11": {
+    "RightsHeading": {
       "type": "string"
     },
-    "Description12": {
+    "RightsPara": {
       "type": "string"
     },
-    "Title5": {
+    "RightsA": {
       "type": "string"
     },
-    "Description13": {
+    "RightsB": {
       "type": "string"
     },
-    "Title6": {
+    "RightsC": {
       "type": "string"
     },
-    "Description14": {
+    "RightsD": {
       "type": "string"
     },
-    "Title7": {
+    "RightsE": {
       "type": "string"
     },
-    "Description15": {
+    "Lawful": {
       "type": "string"
     },
-    "Title8": {
+    "LawfulA": {
       "type": "string"
     },
-    "Title9": {
+    "LawfulB": {
       "type": "string"
     },
-    "Description16": {
+    "LawfulC": {
       "type": "string"
     },
-    "Description17": {
+    "LawfulD": {
       "type": "string"
     },
-    "Description18": {
+    "headingPara3": {
       "type": "string"
     },
-    "Description19": {
+    "Data": {
       "type": "string"
     },
-    "Description20": {
+    "DataPara1": {
       "type": "string"
     },
-    "Title10": {
+    "DataPara2": {
       "type": "string"
     },
-    "Title11": {
+    "LawfulDes": {
       "type": "string"
     },
-    "Description21": {
+    "Retention": {
       "type": "string"
     },
-    "Description22": {
+    "RetentionDes": {
       "type": "string"
     },
-    "Description23": {
+    "Security": {
       "type": "string"
     },
-    "Description24": {
+    "SecurityDes": {
       "type": "string"
     },
-    "Description25": {
+    "PurposePara": {
       "type": "string"
     },
-    "Description26": {
+    "PurposeJ": {
       "type": "string"
     },
-    "Description27": {
+    "PurposeK": {
       "type": "string"
     },
-    "Description28": {
+    "Media": {
       "type": "string"
     },
-    "Description29": {
+    "MediaPara": {
       "type": "string"
     },
-    "Description30": {
+    "Cookies": {
       "type": "string"
     },
-    "Description31": {
+    "CookiesPara": {
       "type": "string"
     },
-    "Description32": {
+    "Market": {
       "type": "string"
     },
-    "Description33": {
+    "MarketPara": {
       "type": "string"
     },
-    "Description34": {
+    "Quality": {
       "type": "string"
     },
-    "Description35": {
+    "QualityPara": {
       "type": "string"
     },
-    "Description36": {
+    "Contact": {
       "type": "string"
     },
-    "Description37": {
+    "ContactPara": {
       "type": "string"
     },
-    "Description38": {
-      "type": "string"
-    },
-    "Description39": {
-      "type": "string"
-    },
-    "Description40": {
-      "type": "string"
-    },
-    "Description41": {
-      "type": "string"
-    },
-    "Description42": {
-      "type": "string"
-    },
-    "Title12": {
-      "type": "string"
-    },
-    "Description43": {
-      "type": "string"
-    },
-    "Title13": {
-      "type": "string"
-    },
-    "Description44": {
-      "type": "text"
-    },
-    "Title14": {
-      "type": "string"
-    },
-    "Description45": {
-      "type": "string"
-    },
-    "Title15": {
-      "type": "string"
-    },
-    "Description46": {
-      "type": "text"
-    },
-    "Title16": {
-      "type": "string"
-    },
-    "Description47": {
-      "type": "string"
-    },
-    "Description48": {
+    "ContactEmail": {
       "type": "string"
     }
   }

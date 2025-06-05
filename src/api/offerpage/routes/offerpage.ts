@@ -1,5 +1,5 @@
 /**
- * offerpage router
+ * offer-card router
  */
 
 import { factories } from '@strapi/strapi';

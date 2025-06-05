@@ -4,13 +4,63 @@
   "info": {
     "singularName": "customer-care",
     "pluralName": "customer-cares",
-    "displayName": "CustomerCare"
+    "displayName": "CustomerCare",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "SiteName": {
+    "HeroHeading": {
+      "type": "string"
+    },
+    "Title1": {
+      "type": "string"
+    },
+    "Feedbacks": {
+      "type": "string"
+    },
+    "FeedbacksSub": {
+      "type": "string"
+    },
+    "Bank": {
+      "type": "string"
+    },
+    "Reach": {
+      "type": "string"
+    },
+    "ReachA": {
+      "type": "string"
+    },
+    "ReachB": {
+      "type": "string"
+    },
+    "Contact": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "HeroDescription": {
+      "type": "string"
+    },
+    "inside": {
+      "type": "string",
+      "unique": false
+    },
+    "insideDes": {
+      "type": "string"
+    },
+    "outside": {
+      "type": "string"
+    },
+    "outsideDes": {
+      "type": "string"
+    },
+    "emailHead": {
+      "type": "string"
+    },
+    "complaint": {
       "type": "string"
     }
   }

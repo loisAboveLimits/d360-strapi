@@ -386,10 +386,28 @@ export interface ApiAboutD360AboutD360 extends Struct.SingleTypeSchema {
     };
   };
   attributes: {
+    complaint: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    complaintDes: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    contact: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description2: Schema.Attribute.String &
+    Description2: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -402,6 +420,25 @@ export interface ApiAboutD360AboutD360 extends Struct.SingleTypeSchema {
         };
       }>;
     Description5: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    directors: Schema.Attribute.Relation<'oneToMany', 'api::leader.leader'>;
+    download: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    email: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    emailDes: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -479,11 +516,35 @@ export interface ApiAboutD360AboutD360 extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    inside: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    insideDes: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::about-d360.about-d360'
     >;
+    outside: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    outsideDes: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
     Title1: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
@@ -530,6 +591,60 @@ export interface ApiAboutD360AboutD360 extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    value1: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    value1Des: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    value2: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    value2Des: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    value3: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    value3Des: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    viaApp1: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    viaApp2: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    viaDes: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
   };
 }
 
@@ -1304,6 +1419,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
 export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
   collectionName: 'contact_uses';
   info: {
+    description: '';
     displayName: 'ContactUs';
     pluralName: 'contact-uses';
     singularName: 'contact-us';
@@ -1312,7 +1428,9 @@ export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    banner: Schema.Attribute.String;
+    BannerText1: Schema.Attribute.String;
+    BannerText2: Schema.Attribute.String;
+    BannerText3: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1322,7 +1440,11 @@ export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
       'api::contact-us.contact-us'
     > &
       Schema.Attribute.Private;
+    outside: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    Title1: Schema.Attribute.String;
+    Title2: Schema.Attribute.String;
+    TollFree: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1332,6 +1454,7 @@ export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
 export interface ApiCustomerCareCustomerCare extends Struct.SingleTypeSchema {
   collectionName: 'customer_cares';
   info: {
+    description: '';
     displayName: 'CustomerCare';
     pluralName: 'customer-cares';
     singularName: 'customer-care';
@@ -1340,17 +1463,33 @@ export interface ApiCustomerCareCustomerCare extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Bank: Schema.Attribute.String;
+    complaint: Schema.Attribute.String;
+    Contact: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Email: Schema.Attribute.String;
+    emailHead: Schema.Attribute.String;
+    Feedbacks: Schema.Attribute.String;
+    FeedbacksSub: Schema.Attribute.String;
+    HeroDescription: Schema.Attribute.String;
+    HeroHeading: Schema.Attribute.String;
+    inside: Schema.Attribute.String;
+    insideDes: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::customer-care.customer-care'
     > &
       Schema.Attribute.Private;
+    outside: Schema.Attribute.String;
+    outsideDes: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    SiteName: Schema.Attribute.String;
+    Reach: Schema.Attribute.String;
+    ReachA: Schema.Attribute.String;
+    ReachB: Schema.Attribute.String;
+    Title1: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1451,6 +1590,257 @@ export interface ApiHelpSupportHelpSupport extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
+  collectionName: 'home_pages';
+  info: {
+    description: 'Home page content';
+    displayName: 'Home Page';
+    pluralName: 'home-pages';
+    singularName: 'home-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Conversion: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Description: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Description1: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Description2: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Description3: Schema.Attribute.RichText &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Description5: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Description6: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Description7: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Description8: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    DigitalCard: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    DigitalCardCTA: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    DigitalCardDescription: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    download: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Fee: Schema.Attribute.String;
+    Heading: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    HeadingB: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Hero: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    HeroDescription: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    heroVideo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-page.home-page'
+    >;
+    PhysicalCard: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    PhysicalCardCTA: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    PhysicalCardDescription: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    Recipient: Schema.Attribute.String;
+    SarihaBTN: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Sender: Schema.Attribute.String;
+    Shariah: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    ShariahDescription: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title1: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title1B: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title2: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title2B: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title3: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title3B: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title4: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title5: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title6: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title7: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title8: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Title8B: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    TransferDescription: Schema.Attribute.String;
+    TransferHeading: Schema.Attribute.String;
+    TransferSubHeading: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiInternationalTransferInternationalTransfer
   extends Struct.SingleTypeSchema {
   collectionName: 'international_transfers';
@@ -1532,6 +1922,66 @@ export interface ApiInvestorRelationInvestorRelation
   };
 }
 
+export interface ApiLeaderLeader extends Struct.CollectionTypeSchema {
+  collectionName: 'leaders';
+  info: {
+    description: '';
+    displayName: 'directors';
+    pluralName: 'leaders';
+    singularName: 'leader';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    fullDes: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::leader.leader'>;
+    name: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    position: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    role: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMediaCenterMediaCenter extends Struct.SingleTypeSchema {
   collectionName: 'media_centers';
   info: {
@@ -1557,6 +2007,10 @@ export interface ApiMediaCenterMediaCenter extends Struct.SingleTypeSchema {
       'oneToMany',
       'api::media-center.media-center'
     >;
+    news_cards: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::news-card.news-card'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     Title1: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
@@ -1576,9 +2030,82 @@ export interface ApiMediaCenterMediaCenter extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiNewsCardNewsCard extends Struct.CollectionTypeSchema {
+  collectionName: 'news_cards';
+  info: {
+    description: '';
+    displayName: 'newsCard';
+    pluralName: 'news-cards';
+    singularName: 'news-card';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::news-card.news-card'
+    > &
+      Schema.Attribute.Private;
+    para1: Schema.Attribute.String;
+    para2: Schema.Attribute.String;
+    para3: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    shortDesc: Schema.Attribute.String;
+    slug: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiOfferCardOfferCard extends Struct.CollectionTypeSchema {
+  collectionName: 'offer_cards';
+  info: {
+    description: '';
+    displayName: 'offerCard';
+    pluralName: 'offer-cards';
+    singularName: 'offer-card';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::offer-card.offer-card'
+    > &
+      Schema.Attribute.Private;
+    offerpage: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::offerpage.offerpage'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    type: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiOfferOffer extends Struct.SingleTypeSchema {
   collectionName: 'offers';
   info: {
+    description: '';
     displayName: 'Offer';
     pluralName: 'offers';
     singularName: 'offer';
@@ -1587,21 +2114,29 @@ export interface ApiOfferOffer extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    banner: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Heading: Schema.Attribute.String;
+    Heading2: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::offer.offer'> &
       Schema.Attribute.Private;
+    offer_cards: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::offer-card.offer-card'
+    >;
     publishedAt: Schema.Attribute.DateTime;
+    Type1: Schema.Attribute.String;
+    Type2: Schema.Attribute.String;
+    Type3: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
   };
 }
 
-export interface ApiOfferpageOfferpage extends Struct.SingleTypeSchema {
+export interface ApiOfferpageOfferpage extends Struct.CollectionTypeSchema {
   collectionName: 'offerpages';
   info: {
     description: '';
@@ -1613,15 +2148,14 @@ export interface ApiOfferpageOfferpage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    benefit: Schema.Attribute.String;
+    benefitDescription: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    date: Schema.Attribute.String;
     Description1: Schema.Attribute.String;
-    Description2: Schema.Attribute.String;
-    imges: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
+    imgage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1630,7 +2164,21 @@ export interface ApiOfferpageOfferpage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     MainTitle: Schema.Attribute.String;
     MainTitle1: Schema.Attribute.String;
+    offer_card: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::offer-card.offer-card'
+    >;
+    offerDuration: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
+    Terms: Schema.Attribute.String;
+    Terms1: Schema.Attribute.String;
+    Terms2: Schema.Attribute.String;
+    Terms3: Schema.Attribute.String;
+    Terms4: Schema.Attribute.String;
+    Terms5: Schema.Attribute.String;
+    Terms6: Schema.Attribute.String;
+    Terms7: Schema.Attribute.String;
     Title1: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1835,82 +2383,66 @@ export interface ApiPrivacyNoticePrivacyNotice extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Contact: Schema.Attribute.String;
+    ContactEmail: Schema.Attribute.String;
+    ContactPara: Schema.Attribute.String;
+    Cookies: Schema.Attribute.String;
+    CookiesPara: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.String;
-    Description1: Schema.Attribute.String;
-    Description10: Schema.Attribute.String;
-    Description11: Schema.Attribute.String;
-    Description12: Schema.Attribute.String;
-    Description13: Schema.Attribute.String;
-    Description14: Schema.Attribute.String;
-    Description15: Schema.Attribute.String;
-    Description16: Schema.Attribute.String;
-    Description17: Schema.Attribute.String;
-    Description18: Schema.Attribute.String;
-    Description19: Schema.Attribute.String;
-    Description2: Schema.Attribute.Text;
-    Description20: Schema.Attribute.String;
-    Description21: Schema.Attribute.String;
-    Description22: Schema.Attribute.String;
-    Description23: Schema.Attribute.String;
-    Description24: Schema.Attribute.String;
-    Description25: Schema.Attribute.String;
-    Description26: Schema.Attribute.String;
-    Description27: Schema.Attribute.String;
-    Description28: Schema.Attribute.String;
-    Description29: Schema.Attribute.String;
-    Description3: Schema.Attribute.String;
-    Description30: Schema.Attribute.String;
-    Description31: Schema.Attribute.String;
-    Description32: Schema.Attribute.String;
-    Description33: Schema.Attribute.String;
-    Description34: Schema.Attribute.String;
-    Description35: Schema.Attribute.String;
-    Description36: Schema.Attribute.String;
-    Description37: Schema.Attribute.String;
-    Description38: Schema.Attribute.String;
-    Description39: Schema.Attribute.String;
-    Description4: Schema.Attribute.String;
-    Description40: Schema.Attribute.String;
-    Description41: Schema.Attribute.String;
-    Description42: Schema.Attribute.String;
-    Description43: Schema.Attribute.String;
-    Description44: Schema.Attribute.Text;
-    Description45: Schema.Attribute.String;
-    Description46: Schema.Attribute.Text;
-    Description47: Schema.Attribute.String;
-    Description48: Schema.Attribute.String;
-    Description5: Schema.Attribute.String;
-    Description6: Schema.Attribute.String;
-    Description7: Schema.Attribute.String;
-    Description8: Schema.Attribute.String;
-    Description9: Schema.Attribute.String;
+    Data: Schema.Attribute.String;
+    DataPara1: Schema.Attribute.String;
+    DataPara2: Schema.Attribute.String;
+    Heading: Schema.Attribute.String;
+    headingPara1: Schema.Attribute.String;
+    headingPara2: Schema.Attribute.String;
+    headingPara3: Schema.Attribute.String;
+    Lawful: Schema.Attribute.String;
+    LawfulA: Schema.Attribute.String;
+    LawfulB: Schema.Attribute.String;
+    LawfulC: Schema.Attribute.String;
+    LawfulD: Schema.Attribute.String;
+    LawfulDes: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::privacy-notice.privacy-notice'
     > &
       Schema.Attribute.Private;
+    Market: Schema.Attribute.String;
+    MarketPara: Schema.Attribute.String;
+    Media: Schema.Attribute.String;
+    MediaPara: Schema.Attribute.String;
+    Personal: Schema.Attribute.String;
+    PersonalPara: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    Title: Schema.Attribute.String;
-    Title1: Schema.Attribute.String;
-    Title10: Schema.Attribute.String;
-    Title11: Schema.Attribute.String;
-    Title12: Schema.Attribute.String;
-    Title13: Schema.Attribute.String;
-    Title14: Schema.Attribute.String;
-    Title15: Schema.Attribute.String;
-    Title16: Schema.Attribute.String;
-    Title2: Schema.Attribute.String;
-    Title3: Schema.Attribute.String;
-    Title4: Schema.Attribute.String;
-    Title5: Schema.Attribute.String;
-    Title6: Schema.Attribute.String;
-    Title7: Schema.Attribute.String;
-    Title8: Schema.Attribute.String;
-    Title9: Schema.Attribute.String;
+    Purpose: Schema.Attribute.String;
+    PurposeA: Schema.Attribute.String;
+    PurposeB: Schema.Attribute.String;
+    PurposeC: Schema.Attribute.String;
+    PurposeD: Schema.Attribute.String;
+    PurposeE: Schema.Attribute.String;
+    PurposeF: Schema.Attribute.String;
+    PurposeG: Schema.Attribute.String;
+    PurposeH: Schema.Attribute.String;
+    PurposeI: Schema.Attribute.String;
+    PurposeJ: Schema.Attribute.String;
+    PurposeK: Schema.Attribute.String;
+    PurposePara: Schema.Attribute.String;
+    Quality: Schema.Attribute.String;
+    QualityPara: Schema.Attribute.String;
+    Retention: Schema.Attribute.String;
+    RetentionDes: Schema.Attribute.String;
+    RightsA: Schema.Attribute.String;
+    RightsB: Schema.Attribute.String;
+    RightsC: Schema.Attribute.String;
+    RightsD: Schema.Attribute.String;
+    RightsE: Schema.Attribute.String;
+    RightsHeading: Schema.Attribute.String;
+    RightsPara: Schema.Attribute.String;
+    Security: Schema.Attribute.String;
+    SecurityDes: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1934,6 +2466,46 @@ export interface ApiProductsServicesFeeProductsServicesFee
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Description: Schema.Attribute.String;
+    FAQ1DescriptionA: Schema.Attribute.String;
+    FAQ1DescriptionAValue: Schema.Attribute.String;
+    FAQ1SubDescriptionA: Schema.Attribute.String;
+    FAQ1SubDescriptionAValue: Schema.Attribute.String;
+    FAQ1SubDescriptionB: Schema.Attribute.String;
+    FAQ1SubDescriptionBValue: Schema.Attribute.String;
+    FAQ2DescriptionA: Schema.Attribute.String;
+    FAQ2DescriptionAValue: Schema.Attribute.String;
+    FAQ2SubDescriptionA: Schema.Attribute.String;
+    FAQ2SubDescriptionAValue: Schema.Attribute.String;
+    FAQ2SubDescriptionB: Schema.Attribute.String;
+    FAQ2SubDescriptionBValue: Schema.Attribute.String;
+    FAQ3DescriptionA: Schema.Attribute.String;
+    FAQ3DescriptionAValue: Schema.Attribute.String;
+    FAQ3SubDescriptionA: Schema.Attribute.String;
+    FAQ3SubDescriptionAValue: Schema.Attribute.String;
+    FAQ3SubDescriptionB: Schema.Attribute.String;
+    FAQ3SubDescriptionBValue: Schema.Attribute.String;
+    FAQ4DescriptionA: Schema.Attribute.String;
+    FAQ4DescriptionAValue: Schema.Attribute.String;
+    FAQ4SubDescriptionA: Schema.Attribute.String;
+    FAQ4SubDescriptionAValue: Schema.Attribute.String;
+    FAQ4SubDescriptionB: Schema.Attribute.String;
+    FAQ4SubDescriptionBValue: Schema.Attribute.String;
+    FAQ4SubDescriptionC: Schema.Attribute.String;
+    FAQ4SubDescriptionCValue: Schema.Attribute.String;
+    FAQ4SubDescriptionD: Schema.Attribute.String;
+    FAQ4SubDescriptionDValue: Schema.Attribute.String;
+    FAQ4SubDescriptionE: Schema.Attribute.String;
+    FAQ4SubDescriptionEValue: Schema.Attribute.String;
+    FAQ4SubDescriptionF: Schema.Attribute.String;
+    FAQ4SubDescriptionFValue: Schema.Attribute.String;
+    FAQ4SubDescriptionG: Schema.Attribute.String;
+    FAQ4SubDescriptionGValue: Schema.Attribute.String;
+    FAQ4SubDescriptionH: Schema.Attribute.String;
+    FAQ4SubDescriptionHValue: Schema.Attribute.String;
+    FAQTitle1: Schema.Attribute.String;
+    FAQTitle2: Schema.Attribute.String;
+    FAQTitle3: Schema.Attribute.String;
+    FAQTitle4: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -2605,9 +3177,13 @@ declare module '@strapi/strapi' {
       'api::customer-protection-principle.customer-protection-principle': ApiCustomerProtectionPrincipleCustomerProtectionPrinciple;
       'api::global.global': ApiGlobalGlobal;
       'api::help-support.help-support': ApiHelpSupportHelpSupport;
+      'api::home-page.home-page': ApiHomePageHomePage;
       'api::international-transfer.international-transfer': ApiInternationalTransferInternationalTransfer;
       'api::investor-relation.investor-relation': ApiInvestorRelationInvestorRelation;
+      'api::leader.leader': ApiLeaderLeader;
       'api::media-center.media-center': ApiMediaCenterMediaCenter;
+      'api::news-card.news-card': ApiNewsCardNewsCard;
+      'api::offer-card.offer-card': ApiOfferCardOfferCard;
       'api::offer.offer': ApiOfferOffer;
       'api::offerpage.offerpage': ApiOfferpageOfferpage;
       'api::page1.page1': ApiPage1Page1;
