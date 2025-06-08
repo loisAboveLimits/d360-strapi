@@ -1,22 +1,17 @@
 {
-  "kind": "collectionType",
-  "collectionName": "offerpages",
+  "kind": "singleType",
+  "collectionName": "careers",
   "info": {
-    "singularName": "offerpage",
-    "pluralName": "offerpages",
-    "displayName": "Offerpage",
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "career",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
   "attributes": {
-    "MainTitle": {
+    "HeroTitle1": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -24,7 +19,15 @@
         }
       }
     },
-    "imgage": {
+    "HeroTitle2": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "HeroImg": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -40,7 +43,7 @@
         }
       }
     },
-    "Title1": {
+    "Title2": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -48,7 +51,7 @@
         }
       }
     },
-    "MainTitle1": {
+    "WorkHead1": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -56,7 +59,7 @@
         }
       }
     },
-    "Description1": {
+    "WorkHead2": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -64,7 +67,7 @@
         }
       }
     },
-    "offerDuration": {
+    "WorkDes1": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -72,7 +75,7 @@
         }
       }
     },
-    "date": {
+    "WorkDes2": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -80,7 +83,7 @@
         }
       }
     },
-    "benefit": {
+    "Application": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -88,7 +91,7 @@
         }
       }
     },
-    "benefitDescription": {
+    "ApplicationDes1": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -96,7 +99,7 @@
         }
       }
     },
-    "Terms": {
+    "ApplicationDes2": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -104,7 +107,7 @@
         }
       }
     },
-    "Terms1": {
+    "ApplicationBtn": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -112,7 +115,23 @@
         }
       }
     },
-    "Terms2": {
+    "ApplicationImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "HelpingHead": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -120,53 +139,10 @@
         }
       }
     },
-    "Terms3": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+    "HelpingText": {
+      "type": "richtext"
     },
-    "Terms4": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Terms5": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Terms6": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Terms7": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "offer_card": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::offer-card.offer-card",
-      "inversedBy": "offerpage"
-    },
-    "slug": {
+    "HelpingBtn": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

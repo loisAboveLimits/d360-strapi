@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "offers",
+  "collectionName": "annual_reports",
   "info": {
-    "singularName": "offer",
-    "pluralName": "offers",
-    "displayName": "Offer",
+    "singularName": "annual-report",
+    "pluralName": "annual-reports",
+    "displayName": "annual-report",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "Heading": {
+    "HeroTitle1": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -24,7 +24,7 @@
         }
       }
     },
-    "Heading2": {
+    "HeroTitle2": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -32,36 +32,7 @@
         }
       }
     },
-    "offer_cards": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::offer-card.offer-card"
-    },
-    "Type1": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Type2": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Type3": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "heroImage": {
+    "HeroImg": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -76,6 +47,51 @@
           "localized": true
         }
       }
+    },
+    "AnnualHead": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Contact": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ContactDes": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "email": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Phone": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::report.report"
     }
   }
 }

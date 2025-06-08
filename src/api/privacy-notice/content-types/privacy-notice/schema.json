@@ -40,198 +40,6 @@
         }
       }
     },
-    "Personal": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PersonalPara": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Purpose": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeA": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeB": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeC": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeD": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeE": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeF": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeG": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeH": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeI": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "RightsHeading": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "RightsPara": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "RightsA": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "RightsB": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "RightsC": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "RightsD": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "RightsE": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Lawful": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "LawfulA": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "LawfulB": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "LawfulC": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "LawfulD": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "headingPara3": {
       "type": "string",
       "pluginOptions": {
@@ -240,7 +48,10 @@
         }
       }
     },
-    "Data": {
+       "Title2": {
+      "type": "richtext"
+    },
+    "FAQ": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -248,7 +59,7 @@
         }
       }
     },
-    "DataPara1": {
+    "FAQTitle1": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -256,7 +67,7 @@
         }
       }
     },
-    "DataPara2": {
+    "FAQDescription1": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -264,7 +75,7 @@
         }
       }
     },
-    "LawfulDes": {
+    "FAQTitle2": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -272,7 +83,7 @@
         }
       }
     },
-    "Retention": {
+    "FAQDescription2": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -280,7 +91,7 @@
         }
       }
     },
-    "RetentionDes": {
+    "FAQTitle3": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -288,7 +99,7 @@
         }
       }
     },
-    "Security": {
+    "FAQDescription3": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -296,7 +107,7 @@
         }
       }
     },
-    "SecurityDes": {
+    "FAQTitle4": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -304,111 +115,7 @@
         }
       }
     },
-    "PurposePara": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeJ": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "PurposeK": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Media": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "MediaPara": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Cookies": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CookiesPara": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Market": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "MarketPara": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Quality": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "QualityPara": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Contact": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "ContactPara": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "ContactEmail": {
+    "FAQDescription4": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
